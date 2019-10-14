@@ -1,0 +1,119 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+    <title>Sean Hart's Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
+    <style>
+    body {
+        background: #FFF;
+        color: #000;
+        padding: 10px;
+        font-family: 'Grenze', serif;
+    }
+    header {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-transform:uppercase;
+    }
+    .img-circle {
+    border-radius: 50%;
+    }
+    
+    #all-contents {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    /* navigation menu */
+    nav {
+        background: #FFF;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: flex;
+        padding: 15px;
+        border: 1px solid #000;
+        border-radius: 25px;
+    }
+    nav header {
+        display: flex;
+        align-items: center;
+        color:#000;
+        flex: 1;
+        
+    }
+    nav ul {
+        list-style-image: none;
+    }
+    nav li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    nav a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    /* main container area beneath menu */
+    main {
+        background: #FFF;
+        display: flex;
+    }
+    .sidebar {
+        margin-right: 25px;
+        padding: 10px;
+    }
+    .sidebar img {
+        width: 200px;
+        border: 1px solid #000;
+    }
+    .content {
+        flex: 1;
+        padding: 15px;
+    }
+    .interests header {
+        font-size: 1.25em;
+    }
+</style>
+</head>
+<body>
+    <div id="all-contents"> 
+        <nav>
+            <header>Sean's First Website</header>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Portfolio</a></li>
+         </ul>
+        </nav>
+
+        <main>
+            <div class="sidebar">
+                <img class="img-circle" src="http://d3dyukvaoxce77.cloudfront.net/wp-content/uploads/2011/01/sean-hart-caddywhompus-drummer-doson-noodle-house.jpg">
+            </div>
+
+            <div class="content">
+            <header>Header Tag</header>
+            <p>PPP</p>
+            <section class="interests">
+                <header>Interests</header>
+             <ul>
+                 <li>Music</li>
+                 <li>Reading</li>
+                 <li>Doson Noodle House(.see pictured)</li>
+            </ul>
+            </section>
+            <section class="interests">
+                <header>Learn More</header>
+             <ul>
+                 <li><a href="http://caddywhompusband.com">Music</li></a>
+                 <li><a href="http://hartsean.com">Web Design</li></a>
+                 <li><a href="http://amazon.com">Reading</li></a>
+                 <li><a href="http://https://www.dosonnoodlehousela.com/">Doson Noodle House(see pictured)</li></a>
+            </ul>
+            </section>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
