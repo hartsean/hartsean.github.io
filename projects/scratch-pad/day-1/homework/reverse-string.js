@@ -28,11 +28,11 @@ function reverseString(input) {
     // idea: reverse method only takes an array.  so splitting the string into an array and the then reversing it, then joinging back into a string should do it.
     
     
-    function reverseString(str) {
+  
         
-        return str.split("").reverse().join("");
+        return input.split("").reverse().join("");
         
-    }
+
     
 
     // YOUR CODE GOES ABOVE HERE //

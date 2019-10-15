@@ -11,12 +11,11 @@
  * using console.log().
  */
 function printArrayValues(array) {
+    
   // YOUR CODE BELOW HERE //
   
-  for (i = 0; i < array.length; i++) {
-  console.log(array[i]);
-}
   
+
   
   // YOUR CODE ABOVE HERE //
 }
