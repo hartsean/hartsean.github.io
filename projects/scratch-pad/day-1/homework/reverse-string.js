@@ -22,9 +22,19 @@
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
     
+    // Inputs:  astring
+    //Outputs: a string
+    // edge cases: output is same as input but in the opposite order.
+    // idea: reverse method only takes an array.  so splitting the string into an array and the then reversing it, then joinging back into a string should do it.
     
     
+    function reverseString(str) {
+        
+        return str.split("").reverse().join("");
+        
+    }
     
+
     // YOUR CODE GOES ABOVE HERE //
 }
 
