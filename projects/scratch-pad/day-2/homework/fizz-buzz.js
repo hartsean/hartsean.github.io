@@ -13,13 +13,29 @@
 function fizzBuzz() {
     // YOUR CODE GOES BELOW HERE //
 
+    for(var i = 1; i <= 100; i++){
 
+        //detect values divisble by 3 and 5
+        if(i % 3 === 0 && i % 5 === 0){
+            //push to the array
+            console.log("FizzBuzz");
+        }
+        //detect values divisible by 3
+        else if(i % 3 === 0){
+            console.log("Fizz");
+        }
+        //is it values divisible by 5
+        else if(i % 5 === 0){
+            console.log("Buzz");
+        }
+        else {
+          console.log(i);
+        }
+        
+    }
 
     // YOUR CODE GOES ABOVE HERE //
 }
-
-
-
 
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
