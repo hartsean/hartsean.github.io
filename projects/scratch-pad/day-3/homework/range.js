@@ -17,6 +17,7 @@
  *      range(14, 8);  // => [14, 13, 12, 11, 10, 9, 8]
  *
  *  TIPS:
+ * 
  *  a. create something to collect the output you'll return.
  *  b. you'll need a loop, which one is best?
  *  c. you'll wanna make use of the push() method of Array.
@@ -24,8 +25,27 @@
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
     
+    var collection = [];   // collect our output here, (push into this array literal)
+    // do a for loop, for 
+    
+    // inputs:
+    //outputs: an array with all intergers in the range. 
+    //edge cases: 
+    
+    if (start < end) {
+        for (let i = start; i <= end; i++) {
+            collection.push(i);
+        } 
+    } else if (start > end) {
+        for (let i = start; i >= end; i--) {
+            collection.push(i);        
+    }
+}
+
+    return collection;  // loop the start till the end
     
     
+
     
     // YOUR CODE GOES ABOVE HERE //
 }

@@ -15,7 +15,10 @@
 function isArray(value) {
     // YOUR CODE BELOW HERE //
     
+    //inputs: a value
+    //outputs: a boolean.  
     
+    return Array.isArray(value);
     
     
     // YOUR CODE ABOVE HERE //
@@ -32,11 +35,22 @@ function isArray(value) {
 function isObject(value) {
     // YOUR CODE BELOW HERE //
     
+    // if has length NO
+    //if a no. NO
+    //if array is array NO
+    if ((typeof value === "object") && (value !== null) && (Array.isArray(value) !== true) && (value instanceof Date !== true)) {
+        return true;
+       }
+    // YOUR CODE BELOW HERE //
     
-    
+    // if has length NO
+    //if a no. NO
+    //if array is array NO
+    return false;
+    }
     
     // YOUR CODE ABOVE HERE //
-}
+
 
 /** 
  * Given an input value, return true if is either an Array or an an Object 
@@ -47,11 +61,17 @@ function isObject(value) {
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
     
+    if ((typeof value === "object") && (value !== null) && (value instanceof Date !== true)) {
+        return true;
+       }
+    // YOUR CODE BELOW HERE //
     
+    return false;
+    }
     
     
     // YOUR CODE ABOVE HERE //
-}
+
 
 /**
  * Given an input value, return the type of the value as a String
@@ -73,13 +93,38 @@ function isCollection(value) {
  *    typeOf([1,2,3]) -> "array"
  */ 
 function typeOf(value) {
-    // YOUR CODE BELOW HERE //
     
-    
-    
+
+    if (Array.isArray(value) === true) {
+        
+       return "array";
+   }    else if ((typeof value === "object") && (value !== null) && (Array.isArray(value) !== true)  && (value instanceof Date !== true)) {
+       return "object";
+   }    else if (typeof value === "string"){
+       
+       return "string";
+   }    else if (typeof value === "undefined") {
+       
+       return "undefined";
+   }    else if (typeof value === "number") {
+       
+       return "number";
+   }    else if (typeof value === "boolean") {
+       
+       return "boolean";
+   }    else if (value === null) {
+       
+       return "null";
+   }    else if (typeof value === "function") {
+       
+       return "function"; 
+   }   
+       
+       return "date";
+   }
     
     // YOUR CODE ABOVE HERE //
-}
+
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&
