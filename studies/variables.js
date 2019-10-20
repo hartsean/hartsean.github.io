@@ -33,3 +33,48 @@ console.log(myName); // prints => bob
 var myVariable = 1;
 var myVariable = true;
 myVariable = "someString";
+
+
+/*
+* VARIABLE KEYWORDS: var, let, & const
+*
+* 0. variable keywords allow us to store our variables and access them in different scopes,
+*    depending on which keyword you use. 
+*
+* 1. var is only bound by the function scope. it can be reassigned and is in the global scope, unless 
+*    it is stored locally in a function.
+*
+* 2. let can be reassigned, but it is block scoped. so it can't be accessed outside of it's locale.
+* 
+* 3. const cannot be re-assigned and is block scoped.  this is the most secure because it's
+*    allows/suggests that your variable values are specific to your locale. However, 
+*    consts that contain complex objects can be modified.
+* 
+*/
+
+
+var = foo;
+let = bar;
+const = foobar;
+
+
+
+/*
+* HOISTING: 
+* 
+* 0. Variable declarations and function decorations are magically lifted to the top of their scope
+*    At run time. Line 0.  
+* 
+* 1. Different types of variables and functions are hoisted differently. 
+* 2, Variable declarations are hoisted, not their initiziliazations. So only their name gets hoisted, 
+*    not their values. 
+* 3. Function names and their exectuted code blocks (function bodies) are hoisted. 
+* 
+*/
+
+var hey = 0;
+function foo(){
+    let hey = 1;
+}
+console.log(foo());
+
