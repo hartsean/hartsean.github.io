@@ -13,8 +13,6 @@
 *    var x /= 5;
 *    var x %= 5;
 *   
-* 
-* 
 *  
 */
 
@@ -47,5 +45,7 @@ typeof "John"  // Returns string
 
 
 * Ternary operator (a ? b : c)
-
+The conditional operator assigns a value to a variable based on a condition.
+voteable = (age < 18) ? "Too young":"Old enough"; // If the variable "age" is a value below 18, 
+//the value of the variable "voteable" will be "Too young", otherwise the value of voteable will be "Old enough".
 
