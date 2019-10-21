@@ -52,13 +52,6 @@ myVariable = "someString";
 * 
 */
 
-
-var = foo;
-let = bar;
-const = foobar;
-
-
-
 /*
 * HOISTING: 
 * 
@@ -71,10 +64,4 @@ const = foobar;
 * 3. Function names and their exectuted code blocks (function bodies) are hoisted. 
 * 
 */
-
-var hey = 0;
-function foo(){
-    let hey = 1;
-}
-console.log(foo());
 

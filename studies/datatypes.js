@@ -18,16 +18,24 @@
 * 5. Object - Objects are complex data types that hold data in key/value pairs. An object is deleniated
 *    with {}.  Within the brackets, they key/value pairs are seperated by commas. To access a value 
 *    stored within an object, you can call on it's key.  values can be any kind of datatype. 
-* 6. Functions - 
-* 7. undefined - There are 2 phases of using variables: declaration and initialization (or assignment).
-* 8. null
+* 6. Functions - Functions are like little programs that do something by executing blocks of code when called by their name.
+*    decalre a funciton by using function name () {code to be executed}
+* 7. undefined - undefined is a datatype that has no definite value but has the space to hold a value. In other words,
+*    an object that has been decalred, but not initilized. 
+* 8. null - null is when the initilized object actually has no-value. 
 * 9. NaN - NaN is a acronym for Not a number. This is a data type that is similar to a number,
 *          a number data-type, but returns undefined.
-* 10.Infinity and -Infinity
-* 11. What is the difference between primitive/simple and complex data types?
+* 10.Infinity and -Infinity - Positive and Negative infinity is a value that is returned when a 
+*     number exceeds the largest possible representable number javascript can handle. Numbers can
+*    go on forever, but our computers wouldn't be able to handle that. So it returns this datatype. 
+*     
+* 11. What is the difference between primitive/simple and complex data types? 
+*     //Primitive data-types have a fixed size in bits.  Complex data types can be any size. 
+*     
 * 12. Primitive values are passed to a function BY COPY, complex values are BY REFERENCE. What does that mean, and how are they different?
-* 
+*     //When a primiteve datatype is used it's actual value (a fixed size) can be stored in the DOM. Complex data types
+*     //are only stored using their names as a reference to the location where the data is stored. 
+*     //becuase the actual data within them can be anysize,
+*     //by refrencing the location of a complex data type, we can access it's data selectively. 
 
 */
-
-// 1. declaration //
