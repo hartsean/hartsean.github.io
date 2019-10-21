@@ -22,11 +22,11 @@ var myName;
 console.log(myName); // prints => undefined
 
 // 2. initialization or assignment //
-myName = 'john';
+var myName = 'john';
 console.log(myName); // prints => john
 
 // 3. re-assignment //
-myName = 'bob';
+var myName = 'bob';
 console.log(myName); // prints => bob
 
 // NOTE: We can assign and re-assign anything to a variable - we cannot do this with constants //
@@ -43,10 +43,13 @@ myVariable = "someString";
 *
 * 1. var is only bound by the function scope. it can be reassigned and is in the global scope, unless 
 *    it is stored locally in a function.
-*
+*/
+/*
 * 2. let can be reassigned, but it is block scoped. so it can't be accessed outside of it's locale.
-* 
-* 3. const cannot be re-assigned and is block scoped.  this is the most secure because it's
+*
+*/
+ 
+/* 3. const cannot be re-assigned and is block scoped.  this is the most secure because it's
 *    allows/suggests that your variable values are specific to your locale. However, 
 *    consts that contain complex objects can be modified.
 * 

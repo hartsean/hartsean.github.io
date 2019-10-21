@@ -1,4 +1,4 @@
-/*
+/**
 * CONTROL FLOW
 *
 * 
@@ -11,45 +11,51 @@
   when an else-if follows a false if statement, the else-if statment will check 
   if it's conditions are true and if so, execute a block of code, much like an if statment.
 * 
-*/
+**/
 
 // If statement ///
-if (5=5){
+var x = 5;
+if (x = 5){
     return true; // returns true 
 }
 
-/*
+/**
  * Else-if can be added to an if statement to check for one or more conditions. 
  * when an else-if follows a false if statement, the else-if statment will check 
  * if it's conditions are true and if so, execute a block of code, much like an if statment.
- */
+ **/
+
 // Else-if statement // 
-if (5=4) {
+
+if (x = 4) {
     return true;
-} else if (5=5) {
+} else if (x = 5) {
     return true; // returns true because the first statement is false. 
 }
 
-/* 
- * Else
- */
-  Else takes no conditions, and will execute a block of code if all other statements
-  (if, else-if) that are above it in the stack return false. It's the default. 
+/** 
+*
+* Else
+*
+* Else takes no conditions, and will execute a block of code if all other statements
+* (if, else-if) that are above it in the stack return false. It's the default. 
 * 
 * 
-*/
-if (5=4) {
+**/
+
+if (x = 4) {
     return true;
-} else if (5=6) {
+} else if (x = 6) {
     return true; // returns true because the first statement is false. 
 } else {
     return false // returns false cause no other conditions are true. 
 }
-/*
+
+/**
 Switch
 Switch statments takes a value, and compare it to a stack of other values and returns a boolean. 
 If the value given to the switch statement is compare to a equal value, it will retun true. 
-*/
+**/
 
 switch (new Date().getDay()) {
   case 0:
