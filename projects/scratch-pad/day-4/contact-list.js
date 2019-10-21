@@ -37,7 +37,8 @@
 
 // YOUR CODE GOES BELOW HERE //
 function makeContact(id, nameFirst, nameLast) {
-return {id: id, nameFirst: nameFirst, nameLast: nameLast};
+    
+    return {id: id, nameFirst: nameFirst, nameLast: nameLast};
 
 } 
 
@@ -72,10 +73,15 @@ function makeContactList() {
         contacts.splice(i, 1);
     }
             }
-        }
+        },
+        printAllContactNames: function() {
+              let all = [];
+          for (let i = 0; i < contacts.length; i++) {
+              all.push(contacts[i].nameFirst + " " + contacts[i].nameLast);
+          } return all.join("\n");
+      }
     };
 }
-function printAllContactNames(){}; // Will attempt later, removing code 
 // YOUR CODE GOES ABOVE HERE //
 
 
