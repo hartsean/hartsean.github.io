@@ -10,7 +10,7 @@ header {
     text-transform:uppercase;
 }
 [id=all-contents] {
-    max-width: 800px;
+    max-width: 100%;
     margin: auto;
 }
 
