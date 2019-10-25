@@ -74,7 +74,7 @@ As we code, save and refresh the browser tab running Matchy. Your work will begi
 
 ## Step 4 - Review
  1. [ ] What are the different ways you can access properties on objects?
- 2. [ ] What are the different ways of accessing elements on  arrays?
+ 2. [ ] What are the different ways of accessing elements on arrays?
 
 ## Step 5 - Take a Break!
 It's super important to give your brain and yourself a rest when you can! Grab a drink and have a think! For like 10 minutes, then, **BACK TO WORK!** :)
@@ -106,6 +106,8 @@ Imagine that our website has a profile page for each animal. On this profile pag
  9. [ ] `console.log` your work.
  
 ## Step 8 - Take Another Break!!
+
+
 
 
 # Part 2

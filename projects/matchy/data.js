@@ -36,10 +36,35 @@ console.log(animal);
 //////////////////////////////////////////////////////////////////////
 
 var animals = [];
-animals.push();
+animals.push(animal);
+console.log(animals);
 
+var duck = { species: 'duck', name: 'Jerome', noises: ['quack', 'honk', 'sneeze', 'woosh'] };
+animals.push(duck);
+console.log(animals);
+var cat = { species: 'simese', name: 'Moe', noises: ['rear', 'hiss', 'hack', 'meow'] };
+var horse = { species: 'horse', name: 'Milly', noises: ['nay', 'brrr', 'sneeze', 'woosh'] };
+animals.push(cat);
+animals.push(horse);
+console.log(animals);
 
+var friends = []; // Since their are no key/vaule assosciations ness. An Array will suffice, as we just need to store their names.   
 
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; 
+}
+function getRandom(animals) {
+  return animals[getRandomInt(0,3)]; // returns a random animal object
+}
+
+var randName = getRandom(animals).name;
+friends.push(randName);
+getRandom(animals).friends = friends;
+console.log(animals);
+
+// expected output: 0, 1 or 2}
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Combining Step 1 and 2 ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////
