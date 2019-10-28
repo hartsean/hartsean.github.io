@@ -154,9 +154,13 @@ function isFriend(name, object) {
 //////////////////////////////////////////////////////////////////////
 
 function nonFriends(name, array) {
-    //Should take a name and a list of people, and return a list of all 
-    //the names that <name> is not friends with 
+    let notMyFriends = [];
     
+    for (let i = 0; i < array.length; i++){
+        if (array[i].name !== name && array[i].friends.includes(name) === false){
+            notMyFriends.push(array[i].name);
+        }
+    } return notMyFriends;
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -164,23 +168,33 @@ function nonFriends(name, array) {
 //////////////////////////////////////////////////////////////////////
 
 function updateObject(object, key, value) {
-
+    object[key] = value;
+    return object;
 }
 
 //////////////////////////////////////////////////////////////////////
 // Function 15 - Remove Properties ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-function removeProperties(object, array) {
-
+    function removeProperties(object, array) {
+    for (let key in object){
+        for (let i = 0; i < array.length; i++){
+            if (key === array[i]){
+                delete object[key];
+            }
+        }
+    }
 }
+
 
 //////////////////////////////////////////////////////////////////////
 // Function 16 - Dedup ///////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
 function dedup(array) {
-
+    const uniqueSet = new Set(array);
+ const backToArray = [...uniqueSet];
+ return backToArray;
 }
 
 //////////////////////////////////////////////////////////////////////
