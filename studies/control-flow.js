@@ -1,6 +1,10 @@
 /**
 * CONTROL FLOW
-*
+* Introduction:
+* Control flow is the order in which the computer executes statements in a script.
+* It's how the computer reads and intereprets our code.  The Control flow in Jacascript is top to bottom. 
+* The computer reads our code, line by line going down starting from the top.
+* 
 * 
 * If
 * An if statement checks IF a condition is true and if it is, it will execute a block
@@ -11,6 +15,15 @@
   when an else-if follows a false if statement, the else-if statment will check 
   if it's conditions are true and if so, execute a block of code, much like an if statment.
 * 
+* 
+* REVISIONS
+* Missing introduction (Talk about control flow)
+Move the description of your if statement so it’s right above your code example
+You have a duplicate explanation for else-if statements
+Else code example: How many code blocks are executed?
+Explain the syntax for switch statements. What does case mean? Why do we need the break keyword?
+Please use your own code example for switch statement
+When would we want to use a switch statement over an if/else-if chain?
 **/
 
 // If statement ///
