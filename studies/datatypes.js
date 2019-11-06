@@ -16,7 +16,8 @@
 /**
 * 2. Strings - Strings are a primititve data type that consists of a series of characters in quotation 
 *    marks. These strings can be manipluated (joined, spit, uppercased, etc) and their individual 
-*    characters can be accesed by using a zero index. 
+*    characters can be accesed by using a zero index. Strings can be inside either single '' or double "" quotes, but when
+*    one is used the same type of quote must be used to end the string. 
 **/
      var str = "I am a string"; // This is what a string looks like, Can also be used with ''.
 /**     
@@ -25,7 +26,7 @@
 *    amount of space when stored, coming in at one bit. 
 **/
      true; // I'm a boolean
-     false; // i'm the other boolean
+     false; // I'm the other boolean
 /** 
 * 4. Array - an array is a complex datatype, that can store a set of ordered data consisting of other datatypes.
 *    arrays are deleniated with [], and can store strings numbers and other arrays within them seperated by commas. 

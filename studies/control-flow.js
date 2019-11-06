@@ -17,18 +17,16 @@
 * 
 * 
 * REVISIONS
-* Missing introduction (Talk about control flow)
-Move the description of your if statement so it’s right above your code example
-You have a duplicate explanation for else-if statements
+
 Else code example: How many code blocks are executed?
-Explain the syntax for switch statements. What does case mean? Why do we need the break keyword?
+
 Please use your own code example for switch statement
 When would we want to use a switch statement over an if/else-if chain?
 **/
 
 // If statement ///
 var x = 5;
-if (x = 5){
+if (x === 5){
     return true; // returns true 
 }
 
@@ -40,9 +38,9 @@ if (x = 5){
 
 // Else-if statement // 
 
-if (x = 4) {
+if (x === 4) {
     return true;
-} else if (x = 5) {
+} else if (x === 5) {
     return true; // returns true because the first statement is false. 
 }
 
@@ -56,39 +54,45 @@ if (x = 4) {
 * 
 **/
 
-if (x = 4) {
+if (x === 4) {
     return true;
-} else if (x = 6) {
-    return true; // returns true because the first statement is false. 
+} else if (x === 6) {
+    return true; // returns false because the first statement is false. 
 } else {
-    return false // returns false cause no other conditions are true. 
+    return false; // returns false cause no other conditions are true. 
 }
 
 /**
 Switch
 Switch statments takes a value, and compare it to a stack of other values and returns a boolean. 
 If the value given to the switch statement is compare to a equal value, it will retun true. 
+--
+Switch statement is invoked with an expression to be evallutated by a set of case statements within curly brackets.
+Each case statement is evaluated and then compared to the evaluation of the original switch parameter/evaluation.
+If no case values match the original value, a default statement is executed at the bottom of the stack. 
+if the values of a case expression and the original expression match, the Break; keyoword is exectuted and that value it returned.
+
 **/
 
-switch (new Date().getDay()) {
+
+switch (4) {
   case 0:
-    day = "Sunday";
+    num = 2;
     break;
   case 1:
-    day = "Monday"; // today is Monday so case 1 will be true here and return the code block MONDAY 
+    num = 1; 
     break;
   case 2:
-     day = "Tuesday";
+     num = 3; 
     break;
-  case 3:
-    day = "Wednesday";
-    break;
-  case 4:
-    day = "Thursday";
-    break;
-  case 5:
-    day = "Friday";
-    break;
-  case 6:
-    day = "Saturday";
+    default: 
+    console.log("done");  // will print "done" to the console because the value 4 was passed through all cases and didn't evaluate to true.
 }
+/**
+
+If-else conditional branches are great for variable conditions that result into a boolean, 
+whereas switch statements are great for fixed data values. 
+
+Another factor, speed: A switch statement might prove to be faster than ifs provided number of cases are good.
+
+**/
