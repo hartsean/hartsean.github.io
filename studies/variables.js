@@ -1,4 +1,4 @@
-/*
+/**
 * VARIABLES:
 *
 * 0. To hold things in memory during the life-cycle of a program, we can use variables.  Variables
@@ -10,7 +10,7 @@
 * variable.
 *
 * 2. There are 2 phases of using variables: declaration and initialization (or assignment).
-*/
+**/
 
 // 1. declaration //
 var myName;
@@ -22,40 +22,48 @@ var myName;
 console.log(myName); // prints => undefined
 
 // 2. initialization or assignment //
-var myName = 'john';
-console.log(myName); // prints => john
+var myName2 = 'john';
+console.log(myName2); // prints => john
 
 // 3. re-assignment //
-var myName = 'bob';
-console.log(myName); // prints => bob
+var myName3 = 'bob';
+console.log(myName3); // prints => bob
 
 // NOTE: We can assign and re-assign anything to a variable - we cannot do this with constants //
-var myVariable = 1;
-var myVariable = true;
-myVariable = "someString";
+var myVariable2 = 1;
+console.log(myVariable2);
+var myVariable24 = true;
+console.log(myVariable24);
 
 
-/*
+/**
 * VARIABLE KEYWORDS: var, let, & const
 *
 * 0. variable keywords allow us to store our variables and access them in different scopes,
 *    depending on which keyword you use. 
-*
+
 * 1. var is only bound by the function scope. it can be reassigned and is in the global scope, unless 
 *    it is stored locally in a function.
-*/
+**/
+var varName= 0;
+varName = 1;
+console.log(varName); //prints 1 to theconsole.
 /*
 * 2. let can be reassigned, but it is block scoped. so it can't be accessed outside of it's locale.
 *
 */
- 
+let letName= 0;
+letName = 1;
+console.log(letName); // prints 1 to the console.
 /* 3. const cannot be re-assigned and is block scoped.  this is the most secure because it's
 *    allows/suggests that your variable values are specific to your locale. However, 
 *    consts that contain complex objects can be modified.
 * 
 */
-
-/*
+const constName = 0;
+// constName = 1; This would result in an error since Const cannot be reassigned. 
+console.log(constName); //prints 0 to the console. 
+/**
 * HOISTING: 
 * 
 * 0. Variable declarations and function decorations are magically lifted to the top of their scope
@@ -66,5 +74,25 @@ myVariable = "someString";
 *    not their values. 
 * 3. Function names and their exectuted code blocks (function bodies) are hoisted. 
 * 
-*/
+**/
+    
+//Hoisting of Var
+console.log (greeter);
+var greeter = "say hello";
 
+//intereprested as this:
+var greeter4 = null;
+console.log(greeter); //greeter is undefined
+console.log(greeter4);
+    
+// Let is not hoisted
+let greeting = "say Hi";
+    if (true) {
+        let greeting = "say Hello instead";
+        console.log(greeting);//"say Hello instead"
+    }
+    console.log(greeting);//"say Hi"
+    
+//Const is also not Hoisted, and can't be reassigned. 
+const greeting2 = "say Hi";
+console.log(greeting2); //"say Hello instead";//error : Assignment to constant variable. 
