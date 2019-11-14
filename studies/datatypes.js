@@ -12,7 +12,13 @@
 *    when stored as data by your program, compared to the other data types, at 8 bits. 
 **/
 
-//   1;   // I am a number
+     1;   // I am a number dataytype. 
+     110600; // Number
+     10.123; // Number
+     -4; //Number
+     (1+1); //Number 
+     
+     
 /**
 * 2. Strings - Strings are a primititve data type that consists of a series of characters in quotation 
 *    marks. These strings can be manipluated (joined, spit, uppercased, etc) and their individual 

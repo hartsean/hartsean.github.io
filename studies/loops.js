@@ -3,20 +3,23 @@
 * 
 * 0. Explain while, for, and for-in loops
 * 
-*    while 
-*    a while loops loop through a block of code as long as a condition is true.
+*    While 
+*    While loops loop through a block of code as long as a given condition is true.
 
 **/
+
 while (!true) {
   // code block to be executed
   console.log("hello");
   // will not print hello to the console infinite times. 
 }
+
 /**    
 * For
 *    for loops loop through a block of code a number of times. it takes it's conditions
 *    like so ---> (set a constant cariable; and as long as this is true; do this)
 */
+
 let cars = "mycarrr";
 for (let i = 0; i < cars.length; i++) {
   cars = cars.toUpperCase();
@@ -46,6 +49,7 @@ var yorks = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"]; // var cars is giv
 for (var i = 0; i < yorks.length; i++) { // for loop conditions, declare a var i that is 0, which will be used to begin  
     console.log(yorks[i]);
 }
+
 // looping backword through an array. 
 var fleebs = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"]; // var cars is given an array of items
 for (var i = fleebs.length; i >= 0; i--) { // for loop conditions, declare a var i that is 0, which will be used to begin  
