@@ -1,10 +1,13 @@
 /**
-*    LOOPS
+* LOOPS
+*    
+* Loops are ways to iterate through data.  The keywords, for, while and for-in 
+* declare that there is about to be a loop, which will in turn, execute a block of code if a given condition is true. 
 * 
 * 0. Explain while, for, and for-in loops
 * 
-*    While 
-*    While loops loop through a block of code as long as a given condition is true.
+* While 
+* While loops loop through a block of code as long as a given condition is true.
 
 **/
 
@@ -16,8 +19,8 @@ while (!true) {
 
 /**    
 * For
-*    for loops loop through a block of code a number of times. it takes it's conditions
-*    like so ---> (set a constant cariable; and as long as this is true; do this)
+* for loops loop through a block of code a number of times. it takes it's conditions
+* like so ---> (set a constant cariable; and as long as this is true; do this)
 */
 
 let cars = "mycarrr";
@@ -40,8 +43,8 @@ for (let key in person1) {
 
 /**
 * 1. Be able to loop any number of times, forward counting up to some limit, backward counting down to 0
-*    Loop over an Array, forwards and backwards
-*    Loop over an Object
+* Loop over an Array, forwards and backwards
+* Loop over an Object
 **/ 
 
 // looping forward through an array. 

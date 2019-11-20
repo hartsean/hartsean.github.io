@@ -1,5 +1,8 @@
 /**
 * OPERATORS
+* Operators are special characters that work with or "act on" our data. They can be used to do different things, 
+* and are categorized by what they do, and how many operands they require. The can be used to assign values, manipulate data and 
+* compare data and much more. 
 *
 * 1. Assignment operators - Introduction:
 * Assignment operators are used to assign values to JavaScript variables.
