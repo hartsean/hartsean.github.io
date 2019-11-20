@@ -37,11 +37,11 @@ if (x === 5){
  **/
 
 // Else-if statement // 
-
+//x is initialized as 5 from above. 
 if (x === 4) {
     return true;
 } else if (x === 5) {
-    return true; // returns true because the first statement is false. 
+    return true; // returns true because the first statement is false. Only this code block is executed. 
 }
 
 /** 
@@ -88,6 +88,7 @@ switch (4) {
     default: 
     console.log("done");  // will print "done" to the console because the value 4 was passed through all cases and didn't evaluate to true.
 }
+
 /**
 
 If-else conditional branches are great for variable conditions that result into a boolean, 
