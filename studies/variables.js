@@ -39,11 +39,11 @@ console.log(myVariable24);
 /**
 * VARIABLE KEYWORDS: var, let, & const
 *
-* 0. variable keywords allow us to store our variables and access them in different scopes,
-*    depending on which keyword you use. 
+* variable keywords allow us to store our variables and access them in different scopes,
+* depending on which keyword you use. 
 
-* 1. var is only bound by the function scope. it can be reassigned and is in the global scope, unless 
-*    it is stored locally in a function.
+* var is only bound by the function scope. it can be reassigned and is in the global scope, unless 
+* it is stored locally in a function.
 **/
 var varName= 0;
 varName = 1;
@@ -77,7 +77,7 @@ console.log(constName); //prints 0 to the console.
 **/
     
 //Hoisting of Var
-console.log (greeter);
+console.log (greeter); // "say hello" is logged to the console. 
 var greeter = "say hello";
 
 //intereprested as this:

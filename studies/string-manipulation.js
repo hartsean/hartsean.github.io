@@ -45,6 +45,10 @@ sliceExample.slice(0,4); // Slices the first 4 indexes of the sliceExample strin
 var splitty = "Some Long String That We Will Split";
 splitty.split(" "); //splits the string at the spaces and returns the 7 words as ind. strings inside of an array. 
 
+//* charAt() – Returns the character at the specified location.
+var string22 = "Sean";
+console.log(string22.charAt(0)); //logs "S" to the console. 
+
 //length()
 var lengthEx = "heyyyyyyy";
 lengthEx.length; // returns the length of this string. I had to check and it is 9. 

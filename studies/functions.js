@@ -1,10 +1,12 @@
 /**
 * FUNCTIONS
+* 
+* Functions are a blocks of code that can be re-used once they have been written. 
 *
 * 0. The two phases to using functions are the Creation phase and the execution phase.
-*    When you declare / create a function it is saved in the memory until it is called 
-*    by invoking it's name.  When it is called the code that is inside the code clock 
-*    is executed.
+* When you declare / create a function it is saved in the memory until it is called 
+* by invoking it's name.  When it is called the code that is inside the code clock 
+* is executed.
 **/
 
 function myFunc(a, b){  // this is where we create the function, name it and give it something to do in the code block.
@@ -17,9 +19,9 @@ myFunc(2,3); // returns 5.  This is the function CALL. We passed to arguments 2,
     
 /**  
 * 1. A parameter is a variable in a function definition. When a function is called, the 
-*    arguments are the data you pass into the function's parameters. Parameter is variable 
-*    in the declaration of function. Argument is the actual value of this variable that gets 
-*    passed to function.
+* arguments are the data you pass into the function's parameters. Parameter is variable 
+* in the declaration of function. Argument is the actual value of this variable that gets 
+* passed to function.
 **/
 
 function myFunc5(a, b){  // function named with 2 parameters
@@ -49,16 +51,16 @@ funcName(2); // returns 4
      
 /** 
 * 4. Function CAN take inputs through it's parameters, that are passed through the function as
-*    arguments when the function is called at runtime, but they don't have to.
-*    If there are no parameters, the funciton will execute the code in the code block.
+* arguments when the function is called at runtime, but they don't have to.
+* If there are no parameters, the funciton will execute the code in the code block.
 * 
-*    When the code block is executed, it can include a return statement to return the result
-*    of the executed code to the console. But if no return statement, the function will just
-*    store the data.
+* When the code block is executed, it can include a return statement to return the result
+* of the executed code to the console. But if no return statement, the function will just
+* store the data.
 *    
 * 
 * 5. SCOPE.  Functions have their own local scope.  Variables inside the function can access 
-*    variables in the global scope. But the inverse is not true. 
+* variables in the global scope. But the inverse is not true. 
 *    
 **/
 
