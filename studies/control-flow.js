@@ -3,25 +3,12 @@
 * Introduction:
 * Control flow is the order in which the computer executes statements in a script.
 * It's how the computer reads and intereprets our code.  The Control flow in Jacascript is top to bottom. 
-* The computer reads our code, line by line going down starting from the top.
+* The computer reads our code, line by line going down starting from the top. 
 * 
-* 
-* If
+* If:
 * An if statement checks IF a condition is true and if it is, it will execute a block
 * of code. if it is not true it will look to see if there are any other else-if statments
 * and if not will return false
-* 
-* Else-if can be added to an if statement to check for one or more conditions. 
-  when an else-if follows a false if statement, the else-if statment will check 
-  if it's conditions are true and if so, execute a block of code, much like an if statment.
-* 
-* 
-* REVISIONS
-
-Else code example: How many code blocks are executed?
-
-Please use your own code example for switch statement
-When would we want to use a switch statement over an if/else-if chain?
 **/
 
 // If statement ///
@@ -54,12 +41,12 @@ if (x === 4) {
 * 
 **/
 
-if (x === 4) {
-    return true;
+if (x === 4) { // does not evaluate to true so the following code block does not execute. 
+    return true; 
 } else if (x === 6) {
-    return true; // returns false because the first statement is false. 
+    return true; // does not evaluate to true so the following code block does not execute. 
 } else {
-    return false; // returns false cause no other conditions are true. 
+    return false; // returns false because no other conditions are true. 
 }
 
 /**

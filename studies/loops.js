@@ -20,12 +20,14 @@ while (!true) {
 /**    
 * For
 * for loops loop through a block of code a number of times. it takes it's conditions
-* like so ---> (set a constant cariable; and as long as this is true; do this)
+* like so ---> (set a constant cariable; and as long as this is true; do this).
+* A For loop can be used to loop through arrays.  
+* It can also be used to loop through characters in a string or number.
 */
 
 let cars = "mycarrr";
 for (let i = 0; i < cars.length; i++) {
-  cars = cars.toUpperCase();
+  cars = cars[i].toUpperCase();
 }
 
 /**
