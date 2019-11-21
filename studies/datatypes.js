@@ -120,5 +120,3 @@
     
     var nameObj = {name: "Sean", lastName: "hart"}; // this variable is assigned to an object.  
      //This object is not directly stored in the variable, but rather it's location in memory is stored. 
-
-      

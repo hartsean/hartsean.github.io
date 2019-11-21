@@ -76,12 +76,8 @@ console.log(constName); //prints 0 to the console.
 **/
     
 //Hoisting of Var
-function sayHello(greeter){
-  return greeter + " " + myVar; // myVar is used in a function before it has been declared.
-}
-var myVar = "Dolly"; // var myVar is hoisted and so it can be used later. 
-sayHello("Hello"); // prints "Hello Dolly" to the console. runs the function and can use globally hoisted variables if needed.
-
+console.log(myVar) // prints undefined to the console
+var myVar = 1; // declaration is hoisted but not initialization
 
 var greeter4 = null; //greeter4 is unassigned.
 console.log(greeter4); //prints null to the console and it's value is undefined. 

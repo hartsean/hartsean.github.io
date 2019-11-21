@@ -52,15 +52,15 @@ if (5 === "5"){// Equal to, in both value and kind
 *
 *
 **/
-let array = ["car", "anothercar"];
+
 let myPar = 4;
-for (let i = 0; i < array.length; i++){
-    if (myPar >= 3 && myPar <= 4){
-    return "yea";
+    if (myPar >= 3 && myPar <= 4){ // check if myPar is greater than or equal to 3 and less than or equal to 4. 
+      console.log("yea"); //logs yea to the console
     }
     else {
-        return "nah";
-}
+      console.log("nah");
+    }
+
 /**
 * Logical operators
 *
@@ -70,14 +70,15 @@ for (let i = 0; i < array.length; i++){
 *    !	not	!(x === y) is true
 *
 **/
-let array2 = ["car", "anothercar"];
+
 let myRvar = 0;
-    if(myRvar === !0){
-    return "not my Rvar";
-    }
-    else if (myRvar !== 1 || myRvar === 0){
-        return array2.push(myRvar);
-    }
+  if(myRvar === !0) {
+    console.log("not right");
+   }
+   else if (myRvar !== 1 || myRvar === 0){
+    console.log(array2); //logs the value of array2 to the console because one of the comparisons in the above OR operator evaluated to true.
+   }
+    
 /**
 * Unary operators (!, typeOf, -)
 *    
