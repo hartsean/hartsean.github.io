@@ -16,7 +16,6 @@
 * search() - Executes the search for a match of a regular expression. If successful, search returns the index of the match inside the string. Otherwise, it returns -1.
 * slice() - Extracts a section of a string and returns a new string.
 * split() - Splits a string into an array of strings by separating the string into substrings.
-* length() – The length of the string is returned as the count of the number of characters it contains.
 * toLowerCase() – Converts the entire string to lower case.
 * toUpperCase() – Converts the entire string to upper case. 
 *       
@@ -48,10 +47,6 @@ splitty.split(" "); //splits the string at the spaces and returns the 7 words as
 //* charAt() – Returns the character at the specified location.
 var string22 = "Sean";
 console.log(string22.charAt(0)); //logs "S" to the console. 
-
-//length()
-var lengthEx = "heyyyyyyy";
-lengthEx.length; // returns the length of this string. I had to check and it is 9. 
 
 //toLowerCase()
 var foo = "AHHH";

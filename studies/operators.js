@@ -23,14 +23,20 @@ var y = (x %= 5);
 
 /* Comparison operators
 These operators compare two values.
-*/
-if (5 == "5"){// Equal to, but not strictly, could be a different kind and be true
-    console.log(true);
-}
+*/ 
 
+//loose comparison == (not recommended)
+if (5 == "5"){// Equal to, but not strictly, could be a different type and still be true
+    console.log(true); //prints true to the console, b/c the above condition evaluates to true.
+}else {
+    console.log(false); // does not reach this condition
+}
+//strict comparison (always use)
 if (5 === "5"){// Equal to, in both value and kind
-    console.log(true);
-}  // Strictly equal in value and type
+    console.log(true); // above condition does not evaluate to true
+}  else {
+    console.log(false); //prints false to the console. 
+}
 
 /**    
 * 2.  Comparison Operators: Introduction: JavaScript has both strict and type–converting comparisons.

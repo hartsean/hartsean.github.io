@@ -67,8 +67,7 @@ console.log(constName); //prints 0 to the console.
 * HOISTING: 
 * 
 * 0. Variable declarations and function decorations are magically lifted to the top of their scope
-*    At run time. Line 0.  
-* 
+*    At run time. (Line 0).  
 * 1. Different types of variables and functions are hoisted differently. 
 * 2, Variable declarations are hoisted, not their initiziliazations. So only their name gets hoisted, 
 *    not their values. 
@@ -77,22 +76,24 @@ console.log(constName); //prints 0 to the console.
 **/
     
 //Hoisting of Var
-console.log (greeter); // "say hello" is logged to the console. 
-var greeter = "say hello";
+function sayHello(greeter){
+  return greeter + " " + myVar; // myVar is used in a function before it has been declared.
+}
+var myVar = "Dolly"; // var myVar is hoisted and so it can be used later. 
+sayHello("Hello"); // prints "Hello Dolly" to the console. runs the function and can use globally hoisted variables if needed.
 
-//intereprested as this:
-var greeter4 = null;
-console.log(greeter); //greeter is undefined
-console.log(greeter4);
+
+var greeter4 = null; //greeter4 is unassigned.
+console.log(greeter4); //prints null to the console and it's value is undefined. 
     
 // Let is not hoisted
 let greeting = "say Hi";
-    if (true) {
+  if (1 === 1) {
         let greeting = "say Hello instead";
-        console.log(greeting);//"say Hello instead"
+        console.log(greeting, "1");//"say Hello instead"
+    } else {
+      console.log(greeting, "2");//does not print 
     }
-    console.log(greeting);//"say Hi"
-    
 //Const is also not Hoisted, and can't be reassigned. 
-const greeting2 = "say Hi";
-console.log(greeting2); //"say Hello instead";//error : Assignment to constant variable. 
+const greeting2 = "say Const Example";
+console.log(greeting2); //prints say Const Example.
